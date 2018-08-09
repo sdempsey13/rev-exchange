@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/vendors/css/animate.css">
+        <script src="resources/js/models.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,300italic' rel='stylesheet' type='text/css'>
+
+        <title>Revtoken Exchange</title>
+        <link rel="shortcut icon" href="/resources/img/favicon.png">
+    </head>
+
+    <body>
+    
+        <nav>
+            <div class="row">
+                <a href="/index.html"><img src="/resources/img/rev_logo.png" alt="Rev Logo" class="logo"></a>
+                <ul class="main-nav">
+                    <li><a href="#head" id='headClick'>Find A Car</a></li>
+                    <li><a href="register.html">Log In</a></li>
+                    <li><a href="register.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="section-submit">
+            <div class="row">
+                <h1>Create Your Listing</h1>
+
+                <form id="submit-car" method="post">
+                    <span style="white-space: nowrap"><h5>Vehicle Identification</h5><p><small><em>(optional)</em></small></p></span>
+
+                    <p>License Plate</p>
+                    <input type="text">
+                    <p>State</p>
+                    <input type="text">
+                    <p>VIN Number</p>
+                    <input type="text">
+                    <p>Stock Number</p>
+                    <input type="text">
+
+                    <h5>Basic Vehicle Information</h5>
+
+                    <p>Year</p>
+                    <input type="text" name="year">
+                    <p>Make</p>
+                    <input type="text" name="make">
+                    <p>Model</p>
+                    <input type="text" name="model">
+                    <p>Trim</p>
+                    <input type="text">
+                    <p>Body Style</p>
+                    <input type="text">
+                    <p>Transmission</p>
+                    <input type="text">
+                    <p>Mileage</p>
+                    <input type="text">
+                    <p>Exterior Color</p>
+                    <input type="text">
+                    <p>Interior Color</p>
+                    <input type="text">
+                    <p>Number of Doors</p>
+                    <input type="text">
+                    <p>Engine Cylinders</p>
+                    <input type="text">
+                    <p>Fuel Type</p>
+                    <input type="text">
+                    <p>Drive Type</p>
+                    <input type="text">
+                    <p>Price</p>
+                    <input type="text">
+
+                    <h5>Vehicle Features</h5>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <p>A/C: Front</p>
+                            <input type="checkbox">
+                            <p>A/C: Rear</p>
+                            <input type="checkbox">
+                            <p>Cruise Control</p>
+                            <input type="checkbox">
+                            <p>Navigation</p>
+                            <input type="checkbox">
+                            <p>Power Locks</p>
+                            <input type="checkbox">
+                            <p>Power Steering</p>
+                            <input type="checkbox">
+                            <p>Keyless Entry</p>
+                            <input type="checkbox">
+                            <p>Integrated Phone</p>
+                            <input type="checkbox">
+                            <p>Airbag: Driver</p>
+                            <input type="checkbox">
+                            <p>Airbag: Passenger</p>
+                            <input type="checkbox">
+                        </div>
+                        <div class="col span-1-of-3">
+                            <p>Airbag: Side</p>
+                            <input type="checkbox">
+                            <p>Alarm</p>
+                            <input type="checkbox">
+                            <p>Antilock Brakes</p>
+                            <input type="checkbox">
+                            <p>Fog Lights</p>
+                            <input type="checkbox">
+                            <p>Rear Window Defrost</p>
+                            <input type="checkbox">
+                            <p>Rear Window Wiper</p>
+                            <input type="checkbox">
+                            <p>Tinted Glass</p>
+                            <input type="checkbox">
+                            <p>AM/FM Stereo</p>
+                            <input type="checkbox">
+                            <p>CD Player</p>
+                            <input type="checkbox">
+                            <p>Alloy Wheels</p>
+                            <input type="checkbox">
+                        </div>
+                        <div class="col span-1-of-3">
+                            <p>DVD System</p>
+                            <input type="checkbox">
+                            <p>Fog Lights</p>
+                            <input type="checkbox">
+                            <p>Keyless Entry</p>
+                            <input type="checkbox">
+                            <p>Sun Roof</p>
+                            <input type="checkbox">
+                            <p>Drive Type</p>
+                            <input type="checkbox">
+                            <p>Power Windows</p>
+                            <input type="checkbox">
+                            <p>Premium Sound System</p>
+                            <input type="checkbox">
+                            <p>Security Alarm</p>
+                            <input type="checkbox">
+                            <p>Third Row Seats</p>
+                            <input type="checkbox">
+                            <p>Tow Package</p>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+
+                    <h5>Description</h5>
+
+                    <p>Enter a description of your vehicle:</p>
+                    <input type="text">
+
+                    <h5>Pictures</h5>
+                    <input type="text" name="text">
+
+                    <h5>Video</h5>
+                    <input type="text" name="text">
+
+                    <h5>Address</h5>
+                    <p>Address</p>
+                    <input type="text">
+                    <p>Address</p>
+                    <input type="text">
+                    <p>City</p>
+                    <input type="text">
+                    <p>State</p>
+                    <input type="text">
+                    <p>Zip</p>
+
+                    <h5>Contact</h5>
+                    <p>First Name</p>
+                    <input type="text">
+                    <p>Last Name</p>
+                    <input type="text">
+                    <p>Email Address</p>
+                    <input type="text">
+                    <p>Phone Number</p>
+                    <input type="text">
+                    <p>Zip</p>
+
+                    <button type="submit" name="submit">Submit</button>
+                    <div id="error"></div>
+                </form>
+
+            </div>
+        </section>
+    
+        <footer>
+        <div class="row">
+            <ul class="footer-nav">
+                <li><a href="/pages/register.html">Dealership Signup</a></li>
+                <li><a href="/pages/register.html">Individual Signup</a></li>
+                <li><a href="/pages/privacy.html">Terms of Use</a></li>
+                <li><a href="/pages/privacy.html">Privacy Policy</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="row social-icons">
+            <a href="https://m.facebook.com/REV-1852118748423970/?ref=bookmarks"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://twitter.com/rev_token" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://www.youtube.com/channel/UCNEfqUH7_W5ZQxziloG7K5A?view_as=subscriber" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="https://www.instagram.com/rev_token/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.reddit.com/user/REV_Token/" target="_blank"><ion-icon name="logo-reddit"></ion-icon></a>
+            <a href="https://www.linkedin.com/company/rev-token/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+    </footer>
+
+    
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Waypoints -->
+    <script src="/vendors/js/jquery.waypoints.min.js"></script>
+    <!-- Ion-Icons -->
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+    <!-- Native Javascript file -->
+    <script src="/resources/js/script.js"></script>
+
+    <script>
+
+        $(".toggleForms").click(function() {
+                
+                $("#signUpForm").toggle();
+                $("#logInForm").toggle();
+                $("#signUp").toggle();
+                $("#logIn").toggle();
+                
+            })
+
+    </script>
+
+    </body>
+
+</html>   

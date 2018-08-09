@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/png" href="resources/img/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <script src="resources/js/models.js"></script>
+        <title>Revtoken Exchange</title>
+        
+    </head>
+
+    <body>
+       
+        <header id="head">
+            <nav>
+                <div class="row">
+                    <a href="index.html"><img src="resources/img/rev_logo.png" alt="Rev Logo" class="logo"></a>
+                    <ul class="main-nav">
+                        <li><a href="#head" id='headClick'>Find A Car</a></li>
+                        <li><a href="pages/register.html">Log In</a></li>
+                        <li><a href="pages/register.html">Sign Up</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col span-1-of-4 makes-box">
+                    <div class=frame>
+                        <span class="helper"></span>
+                        <a href="#"><img src="resources/img/Lamborghini-Logo-Phat.png"></a>
+                        <a href="#"><h2>Lamborghini</h2></a>
+                    </div>
+                    <div class=frame>
+                        <span class="helper"></span>
+                        <a href="#"><img src="resources/img/Koenigsegg-Logo.png"></a>
+                        <a href="#"><h2>Koenigsegg</h2></a>
+                    </div>
+                    <div class=frame>
+                        <span class="helper"></span>
+                        <a href="#"><img src="resources/img/Porsche-Logo.png"></a>
+                        <a href="#"><h2>Porsche</h2></a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 makes-box">
+                    <div class=frame>
+                        <span class="helper"></span>
+                        <a href="#"><img src="resources/img/Bugatti-Logo.png"></a>
+                        <a href="#"><h2>Bugatti</h2></a>
+                    </div>
+                    <div class=frame>
+                        <span class="helper"></span>
+                        <a href="#"><img src="resources/img/Maserati-Logo.png"></a>
+                        <a href="#"><h2>Maserati</h2></a>
+                    </div>
+                    <div class=frame>
+                        <span class="helper"></span>
+                        <a href="#"><img src="resources/img/Benz-Logo.png"></a>
+                        <a href="#"><h2>Mercedes Benz</h2></a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 makes-box">
+                    <div class=frame>
+                        <span class="helper"></span>
+                        <a href="#"><img src="resources/img/Ferrari-Logo.png"></a>
+                        <a href="#"><h2>Ferrari</h2></a>
+                    </div>
+                    <div class=frame>
+                        <span class="helper"></span>
+                        <a href="#"><img src="resources/img/McLaren-Logo.png"></a>
+                        <a href="#"><h2>McLaren</h2></a>
+                    </div>
+                    <div class=frame>
+                        <span class="helper"></span>
+                        <a href="#"><img src="resources/img/mclaren-p1-profile-no-back.png"></a>
+                        <a href="#"><h2>All Makes</h2></a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 search-box">
+                    <div class="search">    
+                        <form>
+                            <h1 id="js--pulse">Search</h1>
+                            <div class="category_div" id="category_div">
+                                <p>Make:</p>
+                                <select name="category" class="required-entry" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+                                    <option value="">Select Make</option>
+                                    <option value="alfa">Alfa Romeo</option>
+                                    <option value="apollo">Apollo</option>
+                                    <option value="aston">Aston Martin</option>
+                                    <option value="audi">Audi</option>
+                                    <option value="bently">Bently</option>
+                                    <option value="bmw">BMW</option>
+                                    <option value="bugatti">Bugatti</option>
+                                    <option value="chevrolet">Chevrolet</option>
+                                    <option value="dodge">Dodge</option>
+                                    <option value="ferrari">Ferrari</option>
+                                    <option value="fiskar">Fiskar</option>
+                                    <option value="ford">Ford</option>
+                                    <option value="jaguar">Jaguar</option>
+                                    <option value="koenigsegg">Koenigsegg</option>
+                                    <option value="lamborghini">Lamborghini</option>
+                                    <option value="land">Land Rover</option>
+                                    <option value="lexus">Lexus</option>
+                                    <option value="lotus">Lotus</option>
+                                    <option value="maserati">Maserati</option>
+                                    <option value="mclaren">McLaren</option>
+                                    <option value="mercedes">Mercedes-Benz</option>
+                                    <option value="pagani">Pagani</option>
+                                    <option value="porsche">Porsche</option>
+                                    <option value="rolls">Rolls-Royce</option>
+                                    <option value="saleen">Saleen</option>
+                                    <option value="tesla">Tesla</option>
+                                </select>
+                            </div>
+                            <div class="sub_category_div" id="sub_category_div">
+                                <p>Model:</p>
+                                <script type="text/javascript" language="JavaScript">
+                                    document.write('<select name="subcategory" id="subcategory"><option value="">Select Model</option></select>')
+                                </script>
+                                <noscript>
+                                    <select name="subcategory" id="subcategory" >
+                                        <option value="">Select Model</option>
+                                    </select>
+                                </noscript>
+                            </div>
+                            <p><input type="submit" value="Search"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </header>
+            
+            <section class="section-listings js--section-listings">
+                <div class="row">
+                    <h1>Exclusive Listings</h1>
+                </div>
+                
+                <!-- Slideshow container -->
+                <!-- Slideshow URL: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+                <div class="row slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="col span-1-of-3 box">
+                            <a href="#"><img src="resources/img/audi.jpg" alt="Audi R8"></a>
+                            <div class="row price"><h3>Audi R8</h3></div>
+                            <div class="row make-model"><h4>$215,770</h4></div>
+                            <div class="owner-logo"></div>
+                        </div>
+                        <div class="col span-1-of-3 box">
+                            <img src="resources/img/ferarri.jpg" alt="Ferrari">
+                            <div class="row price"><h3>Ferrari 559 GTB Fiorano</h3></div>
+                            <div class="row make-model"><h4>$182,980</h4></div>
+                        </div>
+                        <div class="col span-1-of-3 box">
+                            <img src="resources/img/lambo.jpg" alt="Audi R8">
+                            <div class="row price"><h3>Lamborghini Aventador</h3></div>
+                            <div class="row make-model"><h4>$296,870</h4></div>
+                        </div>
+                     </div>
+
+                     <div class="mySlides fade">
+                        <div class="col span-1-of-3 box">
+                            <img src="resources/img/nissan.jpg" alt="Audi R8">
+                            <div class="row price"><h3>2018 &mdash; Nissan GTR</h3></div>
+                            <div class="row make-model"><h4>$245,000</h4></div>
+                        </div>
+                        <div class="col span-1-of-3 box">
+                            <img src="resources/img/rolls-royce.jpg" alt="Ferrari">
+                            <div class="row price"><h3>2016 &mdash; Rolls-Royce</h3></div>
+                            <div class="row make-model"><h4>$465,000</h4></div>
+                        </div>
+                        <div class="col span-1-of-3 box">
+                            <img src="resources/img/mclaren.jpg" alt="Audi R8">
+                            <div class="row price"><h3>$225,670</h3></div>
+                            <div class="row make-model"><h4>Lamborghini &mdash; Aventador</h4></div>
+                        </div>
+                     </div>
+
+                     <div class="mySlides fade">
+                        <div class="col span-1-of-3 box">
+                            <img src="resources/img/bugatti.jpg" alt="Audi R8">
+                            <div class="row price"><h3>$225,670</h3></div>
+                            <div class="row make-model"><h4>Audi &mdash; R8</h4></div>
+                        </div>
+                        <div class="col span-1-of-3 box">
+                            <img src="resources/img/prosche.jpg" alt="Ferrari">
+                            <div class="row price"><h3>$225,670</h3></div>
+                            <div class="row make-model"><h4>Ferrari &mdash; 559 GTB Fiorano</h4></div>
+                        </div>
+                        <div class="col span-1-of-3 box">
+                            <img src="resources/img/koenigsegg.jpg" alt="Audi R8">
+                            <div class="row price"><h3>$225,670</h3></div>
+                            <div class="row make-model"><h4>Lamborghini &mdash; Aventador</h4></div>
+                        </div>
+                     </div>
+
+                    <!-- Next and previous buttons -->
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>    
+                    
+                 <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+
+            </section>
+            
+            <section class="section-about">
+                <div class="row">
+                    <h1>Blockchain Powered Exotic Vehicle Listing</h1>
+                    <p class="long-copy"> This is Rev Exchange, the hottest platform for buying and selling exotic vehicles in the world.</p>
+                </div>
+                <div class="row js--wp-1">
+                    <div class="col span-1-of-4 box">
+                        <h3>Blockchain Sales</h3><br><br>
+                        <p>We elminiate barriers to buying and selling by working with cryptocurrency transcations. This makes exchanges instantaneous, secure, decentralized and cross-border.</p>
+                    </div>
+                    <div class="col span-1-of-4 box">
+                        <h3>White Glove Service</h3><br><br>
+                        <p>REV is an interactive platform and our team of marketers is here to ensure that your exotic vehicle is sold to your satisfaction. </p>
+                    </div>
+                    <div class="col span-1-of-4 box">
+                        <h3>Modern Flexibility</h3><br><br>
+                        <p>Buyers and sellers can choose to exchange value in whatever way they want: via cryptocurrency or through fiat currency like USD.</p>
+                    </div>
+                    <div class="col span-1-of-4 box">
+                        <h3>Competitive Listings</h3><br><br>
+                        <p>Our listings offer more features at a lower price. Our listings and services outstrip the competition and cost you less to participate in the first place. </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section-zooming-images">
+                <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/square-1-lamborghini.jpg" alt="Korean bibimbap with egg and vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/square-2-ferrari-back.jpg" alt="Simple italian pizza with cherry tomatoes">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/square-3-range-rover.jpg" alt="Chicken breast steak with vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/square-4-rolls-royce.jpg" alt="Autumn pumpkin soup">
+                    </figure>
+                </li>
+            </ul>
+            <ul class="meals-showcase clearfix">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/square-5-porsche.jpg" alt="Paleo beef steak with vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/square-6-viper.jpg" alt="Healthy baguette with egg and vegetables">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/square-7-rolls.jpg" alt="Burger with cheddar and bacon">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="resources/img/square-8-ferrari-front.jpg" alt="Granola with cherries and strawberries">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+            
+        <section class="about-rev">
+            <div class="row">
+                <h1>Listing Your Inventory</h1>
+                <p class="long-copy">We'll help you sell your exotic vehicle online. Select from our free listing or a premium package to sell even faster.</p>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="plan-box lower">
+                        <div>
+                            <h3>Platinum</h3><br><br>
+                            <p class="plan-price">98.5 REV</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><ion-icon name="checkmark"></ion-icon>180 Days</li>
+                                <li><ion-icon name="checkmark"></ion-icon>35 Photos</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Thumbnail Photo</li>
+                                <li><ion-icon name="checkmark"></ion-icon>1 Video</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Window Sticker Information</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost">Sign Up Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="plan-box js--wp-2">
+                        <div>
+                            <h3>Centurion</h3><br><br>
+                            <p class="plan-price">215.8 REV</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><ion-icon name="checkmark"></ion-icon>Unlimited Days</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Unlimited Photos</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Up To 3 Thumbnail Photos</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Up to 2 Videos</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Window Sticker Information</li>
+                                <li style="font-weight:400;"><ion-icon name="checkmark"></ion-icon>Personal REV Marketer</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-full">Sign Up Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="plan-box lower">
+                        <div>
+                            <h3>Standard</h3><br><br>
+                            <p class="plan-price">65.5 REV</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><ion-icon name="checkmark"></ion-icon>90 Days</li>
+                                <li><ion-icon name="checkmark"></ion-icon>15 Photos</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Thumbnail Photo</li>
+                                <li><ion-icon name="close"></ion-icon>No Video</li>
+                                <li><ion-icon name="checkmark"></ion-icon>Window Sticker Information</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost">Sign Up Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        
+        <footer>
+            <div class="row">
+                <ul class="footer-nav">
+                    <li><a href="/pages/register.html">Dealership Signup</a></li>
+                    <li><a href="/pages/register.html">Individual Signup</a></li>
+                    <li><a href="/pages/privacy.html">Terms of Use</a></li>
+                    <li><a href="/pages/privacy.html">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="row social-icons">
+                <a href="https://m.facebook.com/REV-1852118748423970/?ref=bookmarks"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com/rev_token" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.youtube.com/channel/UCNEfqUH7_W5ZQxziloG7K5A?view_as=subscriber" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="https://www.instagram.com/rev_token/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.reddit.com/user/REV_Token/" target="_blank"><ion-icon name="logo-reddit"></ion-icon></a>
+                <a href="https://www.linkedin.com/company/rev-token/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+        </footer>
+    
+    
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Waypoints -->
+    <script src="/vendors/js/jquery.waypoints.min.js"></script>
+    <!-- Ion-Icons -->
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+    <!-- Native Javascript file -->
+    <script src="/resources/js/script.js"></script>
+
+    <script>
+
+        $(".toggleForms").click(function() {
+                
+                $("#signUpForm").toggle();
+                $("#logInForm").toggle();
+                $("#signUp").toggle();
+                $("#logIn").toggle();
+                
+            })
+
+    </script>
+
+    </body>
+
+</html>

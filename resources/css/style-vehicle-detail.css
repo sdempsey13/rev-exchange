@@ -1,0 +1,317 @@
+/*
+Logo Red = #7f0000
+Secondary Red = #ff0000
+Grey = #ccc
+*/
+
+
+/* ------------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------------ */
+
+h2 {
+    color: #000000;
+    font-size: 120%;
+    font-weight: 400;
+    margin-top: 5px;
+    display: block;
+    text-align: left;
+    
+}
+
+
+h4 {
+    float: none;
+    margin: 0;
+    text-align: left;
+    text-transform: none;
+}
+
+/* ---- LINKS ----*/
+
+a:link,
+a:visited {
+    text-transform: none;
+    color:#555;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover,
+a:active {
+    color: #ff0000;
+    border-bottom: none;
+    transition: border-bottom 0.3s, color 0.3s;
+}
+
+
+
+/* ------------------------------------ */
+/* MAIN DETAILS */
+/* ------------------------------------ */
+
+.section-main-details {
+    padding: 10px;
+}
+
+.vdp-header-title-minor{
+    font-size: 120%;
+    color: #808080;
+}
+
+.vdp-header-title-main {
+    font-size: 150%;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #212121;
+}
+
+.vdp-header-subtitle {
+    color: #555;
+    font-weight: 400;
+}
+
+.vdp-header-subtitle-minor,
+.vdp-header-title-price,
+.vdp-header-title-accepts {
+    font-size: 85%;
+    font-weight: 200;
+    color: #808080;
+}
+
+.contact-col {
+    margin-left: 15px;
+}
+
+.section-main-details .btn-full {
+    padding: 5px 25px;
+    margin-bottom: 10px;
+}
+
+.section-main-details ion-icon {
+    display: inline-block;
+    float: left;
+    color: #7f0000;
+    height: 25px;
+    width: 25px;
+    margin-right: 7px;
+    text-align: left;
+    margin-top: -1px;
+}
+
+/* ------------------------------------ */
+/* PHOTOS VIDEOS */
+/* ------------------------------------ */
+
+.section-photos-videos {
+    padding: 0px
+}
+
+.photos-videos-banner {
+    background-color: #7f0000;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+.photo-display-row {
+    margin-bottom: 0px; 
+}
+
+.photos-videos-banner p{
+    color: white;
+}
+
+.section-photos-videos .hero {
+    margin: 0px;
+    padding: 0px;
+    font-size: 0;
+}
+
+.section-photos-videos .hero img {
+    width: 860px;
+    height: 100%;
+    display: inline-block;
+}
+
+.section-photos-videos .mini img,
+.section-photos-videos .mini ion-icon{
+    width: 150px;
+    margin-left: 67.5px;
+    margin-top: 20px;
+}
+
+.section-photos-videos .mini ion-icon {
+    font-size: 200%;
+}
+
+/* ------------------------------------ */
+/* CONTACT SELLER */
+/* ------------------------------------ */
+
+.section-contact-seller {
+    padding: 20px 0 25px 0;
+    background-color: #e0e0e0;
+}
+
+.section-contact-seller .title {
+    margin-bottom: 20px;
+}
+
+.section-contact-seller .name {
+    margin-bottom: 1px;
+    text-decoration: underline;
+}
+
+.section-contact-seller .address {
+    margin-bottom: 10px;
+}
+
+.section-contact-seller input {
+    width: 90%;
+    margin-top: 20px;
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.section-contact-seller input:first-child {
+    margin-top: 30px;
+}
+
+textarea {
+    height: 98px;
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #d1d1d1;
+}
+
+.section-contact-seller input[type=submit] {
+    margin-top: 6px;
+    width: 100%;
+}
+
+.section-contact-seller .bottom {
+    margin: 0;
+    
+}
+
+.section-contact-seller .carfax {
+    margin: 45px 0 0 85px;
+}
+
+.section-contact-seller .carfax img {
+    width: 150px;
+}
+
+/* ------------------------------------ */
+/* MINOR DETAILS */
+/* ------------------------------------ */
+
+.section-minor-details {
+    padding-top: 30px;
+}
+
+/* ---- BANNER ---- */
+
+.minor-details-banner {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 10px 0 5px 0;
+    margin: 0;
+}
+
+.section-minor-details .col:nth-child(2) {
+    margin-left:0;
+}
+
+.section-minor-details .col:nth-child(3) {
+    margin-left:35px;
+}
+
+.section-minor-details img {
+    height: 75px;
+}
+
+.section-minor-details .top {
+    font-size: 80%;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #919191;
+}
+
+.section-minor-details .bottom {
+    font-size: 220%;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+/* ---- BODY ---- */
+
+.titles {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.grey,
+.white {
+    margin: 0;
+    padding: 6px;
+}
+
+.grey {
+        background-color: #e0e0e0;
+}
+
+.grey:nth-child(1),
+.grey:nth-child(3) {
+    border-radius: 4px 0 0 4px;
+}
+
+.grey:nth-child(2),
+.grey:nth-child(4) {
+    border-radius: 0 4px 4px 0;
+}
+
+.features {
+    margin-left: 35px;
+}
+
+.features ion-icon {
+    display: inline-block;
+    float: left;
+    color: #7f0000;
+    height: 25px;
+    width: 25px;
+    margin-right: 7px;
+    text-align: left;
+    margin-top: -1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

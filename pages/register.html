@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="/resources/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,300italic' rel='stylesheet' type='text/css'>
+
+        
+        <title>Register</title>
+
+        <style type="text/css">
+        
+            #logInForm {
+                display:none;
+            
+            }
+            
+            #logIn {
+                display:none;
+            }
+       
+        
+        </style>
+    
+    
+    </head>
+
+    <body>
+    
+        <div class="page-wrap">
+
+           <header>
+                <nav>
+                    <div class="row">
+                        <a href="/index.html"><img src="/resources/img/rev_logo.png" alt="Rev Logo" class="logo"></a>
+                        <ul class="main-nav">
+                            <li><a href="register.html">Log In</a></li>
+                            <li><a href="register.html">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </nav> 
+            </header>
+
+            <section class="section-register">
+                <div class="row">
+
+                    <div class="register-box">
+
+                        <div id="signUp"><h1>Sign Up</h1></div>
+                        
+                        <div id="logIn"><h1>Log In</h1></div>
+
+                        <div id="error"></div>
+
+                        <form method="post" id="signUpForm">
+                                
+                                <input class="form-control" type="email" name="email" placeholder="Email">
+                                
+                                <input class="form-control" type="password" name="password" placeholder="Password">
+
+                                <input type="hidden" name="signUp" value="1">
+
+                                <input class="btn btn-success" type="submit" name="submit" value="Sign Up">
+
+                            <p><a class="toggleForms">Log In</a></p>
+
+                        </form>
+
+                        <form method="post" id="logInForm">
+
+                                <input class="form-control" type="email" name="email" placeholder="Email">   
+
+                                <input class="form-control" type="password" name="password" placeholder="Password">
+
+                                <input type="hidden" name="signUp" value="0">  
+
+                                <input class="btn btn-success" type="submit" name="submit" value="Log In">   
+
+                            <p><a class="toggleForms">Sign Up</a></p>
+
+                        </form>
+
+                </div>
+
+            </div>
+                
+        </section>
+            
+        <footer>
+            <div class="row">
+                <ul class="footer-nav">
+                    <li><a href="register.html">Dealership Signup</a></li>
+                    <li><a href="register.html">Individual Signup</a></li>
+                    <li><a href="privacy.html">Terms of Use</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="row social-icons">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com/rev_token" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.youtube.com/channel/UCNEfqUH7_W5ZQxziloG7K5A?view_as=subscriber" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="https://www.instagram.com/rev_token/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.reddit.com/user/REV_Token/" target="_blank"><ion-icon name="logo-reddit"></ion-icon></a>
+                <a href="https://www.linkedin.com/company/rev-token/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+        </footer>
+    
+    <!-- Native Javascript file -->
+    <script src="/resources/js/script.js"></script>
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Ion-Icons -->
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+    
+    <script>
+
+        $(".toggleForms").click(function() {
+                
+                $("#signUpForm").toggle();
+                $("#logInForm").toggle();
+                $("#signUp").toggle();
+                $("#logIn").toggle();
+                
+            })
+
+    </script>
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
