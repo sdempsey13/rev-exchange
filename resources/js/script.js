@@ -125,9 +125,10 @@ $('#headClick').on("click", function() {
     });
 
 
+/*------ Sticky-Kit ---------*/
 
-
-
+//Sticky Search on Search Results Page 
+$(".sidebar").stick_in_parent();
 
 
 

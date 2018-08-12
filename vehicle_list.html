@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/png" href="resources/img/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style-vehicle-list.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <script src="resources/js/models.js"></script>
+        <title>Revtoken Exchange</title>
+        
+    </head>
+
+    <body>
+       
+        <header id="head">
+            <nav>
+                <div class="row">
+                    <a href="index.html"><img src="resources/img/rev_logo.png" alt="Rev Logo" class="logo"></a>
+                    <ul class="main-nav">
+                        <li><a href="#head" id='headClick'>Find A Car</a></li>
+                        <li><a href="pages/register.html">Log In</a></li>
+                        <li><a href="pages/register.html">Sign Up</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="section-search-results">
+            <div class="row">
+                <div class="col span-1-of-4 sidebar">
+                    <div class="search">    
+                        <form>
+                            <h1 id="js--pulse">Search</h1>
+                            <div class="category_div" id="category_div">
+                                <p>Make:</p>
+                                <select name="category" class="required-entry" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+                                    <option value="">Select Make</option>
+                                    <option value="alfa">Alfa Romeo</option>
+                                    <option value="apollo">Apollo</option>
+                                    <option value="aston">Aston Martin</option>
+                                    <option value="audi">Audi</option>
+                                    <option value="bently">Bently</option>
+                                    <option value="bmw">BMW</option>
+                                    <option value="bugatti">Bugatti</option>
+                                    <option value="chevrolet">Chevrolet</option>
+                                    <option value="dodge">Dodge</option>
+                                    <option value="ferrari">Ferrari</option>
+                                    <option value="fiskar">Fiskar</option>
+                                    <option value="ford">Ford</option>
+                                    <option value="jaguar">Jaguar</option>
+                                    <option value="koenigsegg">Koenigsegg</option>
+                                    <option value="lamborghini">Lamborghini</option>
+                                    <option value="land">Land Rover</option>
+                                    <option value="lexus">Lexus</option>
+                                    <option value="lotus">Lotus</option>
+                                    <option value="maserati">Maserati</option>
+                                    <option value="mclaren">McLaren</option>
+                                    <option value="mercedes">Mercedes-Benz</option>
+                                    <option value="pagani">Pagani</option>
+                                    <option value="porsche">Porsche</option>
+                                    <option value="rolls">Rolls-Royce</option>
+                                    <option value="saleen">Saleen</option>
+                                    <option value="tesla">Tesla</option>
+                                </select>
+                            </div>
+                            <div class="sub_category_div" id="sub_category_div">
+                                <p>Model:</p>
+                                <script type="text/javascript" language="JavaScript">
+                                    document.write('<select name="subcategory" id="subcategory"><option value="">Select Model</option></select>')
+                                </script>
+                                <noscript>
+                                    <select name="subcategory" id="subcategory" >
+                                        <option value="">Select Model</option>
+                                    </select>
+                                </noscript>
+                            </div>
+                            <p><input type="submit" value="Search"></p>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col span-3-of-4 results-container"> <!-- Holds Individual Results, called listing-row -->
+                    
+                    <div class="row listing-row">
+                        <div class="col span-1-of-3 picture">
+                            <img src="resources/img/example-gtr/gtr.png" alt="Nissan GTR">
+                        </div>
+                        <div class="col span-1-of-3 middle">
+                            <div>
+                                <div class="v-header-title"> 
+                                    <span class="v-header-title-year">2014</span> 
+                                    <span class="v-header-title-main">Nissan GT-R</span> 
+                                </div>
+                                <div class="v-header-subtitle"> 
+                                    Black Edition Sedan 4D 
+                                </div>
+                                <div class="v-header-subtitle-minor"> 
+                                    23,013 miles 
+                                </div>
+                            </div><br>
+                                <div class="v-header-price"> 
+                                    <span class="v-header-price-main">$69,550</span>
+                                    <div class="accepts">Accepts: <strong>BTC, ETH, USDT</strong></div>
+                                </div>
+                        </div>
+                        <div class="col span-1-of-3">
+                            <div class="dealer-info">
+                                <a href="#" class="btn btn-ghost btn-details">See Details</a><br><br>
+                                <a href="https://www.floridaperformancecars.com/"><p class="name"><strong>Florida Performance Cars</strong></p></a><br>
+                                Riviera Beach, FL
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row listing-row">
+                        <div class="col span-1-of-3 picture">
+                            <img src="resources/img/example-gtr/gtr.png" alt="Nissan GTR">
+                        </div>
+                        <div class="col span-1-of-3 middle">
+                            <div>
+                                <div class="v-header-title"> 
+                                    <span class="v-header-title-year">2014</span> 
+                                    <span class="v-header-title-main">Nissan GT-R</span> 
+                                </div>
+                                <div class="v-header-subtitle"> 
+                                    Black Edition Sedan 4D 
+                                </div>
+                                <div class="v-header-subtitle-minor"> 
+                                    23,013 miles 
+                                </div>
+                            </div><br>
+                                <div class="v-header-price"> 
+                                    <span class="v-header-price-main">$69,550</span>
+                                    <div class="accepts">Accepts: <strong>BTC, ETH, USDT</strong></div>
+                                </div>
+                        </div>
+                        <div class="col span-1-of-3">
+                            <div class="dealer-info">
+                                <a href="#" class="btn btn-ghost btn-details">See Details</a><br><br>
+                                <a href="https://www.floridaperformancecars.com/"><p class="name"><strong>Florida Performance Cars</strong></p></a><br>
+                                Riviera Beach, FL
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row listing-row">
+                        <div class="col span-1-of-3 picture">
+                            <img src="resources/img/example-gtr/gtr.png" alt="Nissan GTR">
+                        </div>
+                        <div class="col span-1-of-3 middle">
+                            <div>
+                                <div class="v-header-title"> 
+                                    <span class="v-header-title-year">2014</span> 
+                                    <span class="v-header-title-main">Nissan GT-R</span> 
+                                </div>
+                                <div class="v-header-subtitle"> 
+                                    Black Edition Sedan 4D 
+                                </div>
+                                <div class="v-header-subtitle-minor"> 
+                                    23,013 miles 
+                                </div>
+                            </div><br>
+                                <div class="v-header-price"> 
+                                    <span class="v-header-price-main">$69,550</span>
+                                    <div class="accepts">Accepts: <strong>BTC, ETH, USDT</strong></div>
+                                </div>
+                        </div>
+                        <div class="col span-1-of-3">
+                            <div class="dealer-info">
+                                <a href="#" class="btn btn-ghost btn-details">See Details</a><br><br>
+                                <a href="https://www.floridaperformancecars.com/"><p class="name"><strong>Florida Performance Cars</strong></p></a><br>
+                                Riviera Beach, FL
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row listing-row">
+                        <div class="col span-1-of-3 picture">
+                            <img src="resources/img/example-gtr/gtr.png" alt="Nissan GTR">
+                        </div>
+                        <div class="col span-1-of-3 middle">
+                            <div>
+                                <div class="v-header-title"> 
+                                    <span class="v-header-title-year">2014</span> 
+                                    <span class="v-header-title-main">Nissan GT-R</span> 
+                                </div>
+                                <div class="v-header-subtitle"> 
+                                    Black Edition Sedan 4D 
+                                </div>
+                                <div class="v-header-subtitle-minor"> 
+                                    23,013 miles 
+                                </div>
+                            </div><br>
+                                <div class="v-header-price"> 
+                                    <span class="v-header-price-main">$69,550</span>
+                                    <div class="accepts">Accepts: <strong>BTC, ETH, USDT</strong></div>
+                                </div>
+                        </div>
+                        <div class="col span-1-of-3">
+                            <div class="dealer-info">
+                                <a href="#" class="btn btn-ghost btn-details">See Details</a><br><br>
+                                <a href="https://www.floridaperformancecars.com/"><p class="name"><strong>Florida Performance Cars</strong></p></a><br>
+                                Riviera Beach, FL
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+        </section>
+        
+        <footer>
+            <div class="row">
+                <ul class="footer-nav">
+                    <li><a href="/pages/register.html">Dealership Signup</a></li>
+                    <li><a href="/pages/register.html">Individual Signup</a></li>
+                    <li><a href="/pages/privacy.html">Terms of Use</a></li>
+                    <li><a href="/pages/privacy.html">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="row social-icons">
+                <a href="https://m.facebook.com/REV-1852118748423970/?ref=bookmarks"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com/rev_token" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.youtube.com/channel/UCNEfqUH7_W5ZQxziloG7K5A?view_as=subscriber" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="https://www.instagram.com/rev_token/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.reddit.com/user/REV_Token/" target="_blank"><ion-icon name="logo-reddit"></ion-icon></a>
+                <a href="https://www.linkedin.com/company/rev-token/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+        </footer>
+    
+    
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Waypoints -->
+    <script src="/vendors/js/jquery.waypoints.min.js"></script>
+    <!-- Sticky-Kit -->
+    <script src="/vendors/js/sticky-kit.js"></script>
+    <!-- Ion-Icons -->
+    <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+    <!-- Native Javascript file -->
+    <script src="/resources/js/script.js"></script>
+
+    <script>
+
+        $(".toggleForms").click(function() {
+                
+                $("#signUpForm").toggle();
+                $("#logInForm").toggle();
+                $("#signUp").toggle();
+                $("#logIn").toggle();
+                
+            })
+
+        $(".sidebar").stick_in_parent();
+        
+    </script>
+
+    </body>
+
+</html>

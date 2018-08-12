@@ -1,0 +1,80 @@
+.sidebar {
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+
+/* -------- LISTING ROW ---------- */
+
+.listing-row {
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+.listing-row .picture {
+    margin: 0;
+}
+
+.middle {
+    margin-bottom: 0;
+}
+
+.listing-row img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+    display: block;
+    
+}
+
+
+/* ----- CAR TITLE STYLING (Year, Make, Model, Mileage, etc.)-------- */
+.v-header-title-year{
+    font-size: 110%;
+    color: #808080;
+}
+
+.v-header-title-main {
+    font-size: 130%;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #212121;
+}
+
+.v-header-subtitle {
+    color: #555;
+    font-weight: 400;
+}
+
+.v-header-subtitle-minor,
+.accepts {
+    font-size: 85%;
+    font-weight: 200;
+    color: #808080;
+}
+
+.v-header-price-main {
+    font-size: 130%;
+    font-weight: 400;
+    color: #212121;
+}
+
+
+/* ----- DEALER INFO ------*/
+
+.btn-details {
+    font-size: 75%;
+} 
+
+.btn:link {
+    padding: 5px 45px;
+    font-weight: 300;
+}
+
+.dealer-info .name {
+    color: #555;
+    font-size: 90%;
+    font-weight: 200;
+}
+
